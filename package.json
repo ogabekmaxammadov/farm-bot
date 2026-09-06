@@ -1,0 +1,24 @@
+{
+  "name": "farm-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ferma boshqaruv tizimi uchun Telegram bot",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx tests/logic.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.115.0",
+    "dotenv": "^17.2.3",
+    "grammy": "^1.46.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.20.6",
+    "typescript": "^5.7.3"
+  }
+}
